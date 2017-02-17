@@ -4,8 +4,13 @@ from annoying.decorators import render_to
 
 @render_to('home.html')
 def home(request):
-    q = ''
-    if 'jashtag' in request.GET:
-        q = request.GET['jashtag']
-        print "valor: ", q
-    return {'jashtag': q}
+    resultado = False
+    if request.method == 'POST':
+        jashtag = request.POST.get('jashtag', None)
+        if jashtag:
+            resultado = jashtag
+        else:
+            resultado = False
+
+    return {'jashtag': resultado}
+

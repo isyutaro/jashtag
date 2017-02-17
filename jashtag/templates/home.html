@@ -7,7 +7,8 @@
     <h1>jashtag</h1>
 <br>
 
-<form class="searchform">
+<form action="" method="POST">
+    {% csrf_token %}
     <input class="jashtag" type="text" name="jashtag" maxlength="50" id="jashtag" value="jashtag..." onfocus="if (this.value == 'jashtag...') {this.value = '';}" onblur="if (this.value == '') {this.value = '';}" />
     <input class="searchbutton" type="submit" value="Buscar" />
 </form>
@@ -16,5 +17,6 @@
     <br>
     <b>El jashtag trakeado: </b> {{ jashtag }}
 {% endif %}
+
 
 {% endblock %}

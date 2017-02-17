@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).absolute().parent.parent.parent
 SECRET_KEY = '4(t(qlwk93_-@ckz870c_1kq=ep*b-2$etmlwqq4td44@wnjxl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
