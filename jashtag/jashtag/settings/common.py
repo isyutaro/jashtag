@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'compressor',
+    'twitter',
 )
 
 MIDDLEWARE_CLASSES = (
